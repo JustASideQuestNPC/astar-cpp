@@ -100,7 +100,8 @@ namespace aStar {
         }
       }
 
-      // words cannot describe how inefficient this is
+      // colors in the path (currently a bit broken)
+      // also, words cannot describe how inefficient this is
       Node p{parent};
       while (p.px != -1 && p.py != -1) {
         gridColors[p.y][p.x] = OPEN;
