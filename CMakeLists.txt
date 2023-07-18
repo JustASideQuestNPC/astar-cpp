@@ -7,7 +7,7 @@ FetchContent_Declare(SFML
     GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(astar-cpp src/main.cpp src/pixel_renderer.h src/a_star.hpp)
+add_executable(astar-cpp src/main.cpp src/pixel_renderer.h src/nlohmann/json.hpp src/a_star.hpp)
 target_link_libraries(astar-cpp PRIVATE sfml-graphics)
 target_compile_features(astar-cpp PRIVATE cxx_std_17)
 if (WIN32 AND BUILD_SHARED_LIBS)
